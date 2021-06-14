@@ -19,8 +19,13 @@
         <activity android:name=".Store_Selector" />
         <activity android:name=".splashPage" />
         <activity android:name=".cart" />
-        <activity android:name=".item_details" />
-        <activity android:name=".signup_page" />
+        <activity
+            android:name=".item_details"
+            android:noHistory="true"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".signup_page"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Developer" />
         <activity android:name=".HomePage" />
         <activity android:name=".MainActivity">
