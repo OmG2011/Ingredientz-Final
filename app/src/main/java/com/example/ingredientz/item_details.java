@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -120,8 +119,7 @@ public class item_details extends AppCompatActivity {
     public void onBackPressed() {
         Intent i = new Intent(this, HomePage.class);
         i.putExtra("Mobile", num);
-        Log.d("success", num + "Nope");
-        i.putExtras(getIntent());
+        //i.putExtras(getIntent());
         startActivity(i);
         finish();
     }

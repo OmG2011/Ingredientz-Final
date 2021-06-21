@@ -161,7 +161,7 @@ public class cart extends AppCompatActivity {
         place_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent order = new Intent(cart.this, Priority_Page.class);
+                Intent order = new Intent(cart.this, Store_Selector.class);
                 order.putExtra("Number", number);
                 order.putExtras(getIntent());
                 startActivity(order);
