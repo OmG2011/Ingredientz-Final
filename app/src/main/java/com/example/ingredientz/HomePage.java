@@ -11,6 +11,7 @@ import android.app.job.JobInfo;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -96,6 +97,7 @@ public class HomePage extends AppCompatActivity {
                     }
 
                     catch (Exception e){
+                        Log.d("success", number + "Why");
                         Toast.makeText(HomePage.this, e.toString() + " 1", Toast.LENGTH_SHORT).show();
                     }
 

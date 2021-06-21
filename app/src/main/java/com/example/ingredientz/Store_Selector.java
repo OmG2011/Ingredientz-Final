@@ -78,6 +78,7 @@ public class Store_Selector extends AppCompatActivity {
                 }
             }
 
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

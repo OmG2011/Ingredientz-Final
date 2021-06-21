@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -181,6 +182,7 @@ public class cart extends AppCompatActivity {
     public void onBackPressed() {
         Intent i = new Intent(cart.this, HomePage.class);
         i.putExtra("Mobile", num);
+        Log.d("success", num);
         i.putExtras(getIntent());
         startActivity(i);
         finish();
