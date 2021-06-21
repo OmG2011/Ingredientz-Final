@@ -119,7 +119,7 @@ public class item_details extends AppCompatActivity {
     public void onBackPressed() {
         Intent i = new Intent(this, HomePage.class);
         i.putExtra("Mobile", num);
-        //i.putExtras(getIntent());
+        i.putExtras(getIntent());
         startActivity(i);
         finish();
     }

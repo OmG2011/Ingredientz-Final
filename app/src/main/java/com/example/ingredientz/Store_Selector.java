@@ -39,7 +39,7 @@ public class Store_Selector extends AppCompatActivity {
     ArrayList<String> store_names, cart_items;
     ArrayList<Integer> number_of_items, total_cost, distance;
     FirebaseDatabase data, data2, data3;
-    String num;
+    String num, choice;
     int temp = 0, temp2 = 0;
     String temp_store_name_holder;
     Boolean isDone = false;
@@ -53,11 +53,12 @@ public class Store_Selector extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_store_selector);
+        setContentView(R.layout.store_selector);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         Intent i = getIntent();
         num = i.getStringExtra("Number");
+        choice = i.getStringExtra("Choice");
 
         data = FirebaseDatabase.getInstance();
         data2 = FirebaseDatabase.getInstance();
